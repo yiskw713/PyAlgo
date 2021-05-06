@@ -18,7 +18,7 @@ def bfs(
     Return:
         res: the minimum number of moves. if -1, then the goal is unreachable.
     """
-    costs = [float("inf")] * n_nodes
+    costs = [10 ** 9] * n_nodes
     costs[start] = 0
     q = deque([(start, 0)])
 
